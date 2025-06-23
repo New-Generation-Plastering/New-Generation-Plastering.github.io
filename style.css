@@ -73,10 +73,40 @@ main {
     height: 24px;
 }
 
-/* Footer */
-footer {
-    background: #2e3b4e;
-    color: white;
+/* LEGO-style footer */
+.lego-footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 2rem 1rem;
     text-align: center;
-    padding: 1rem;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 0;
 }
