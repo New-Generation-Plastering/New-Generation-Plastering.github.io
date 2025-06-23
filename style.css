@@ -43,53 +43,34 @@ main {
     margin-bottom: 1rem;
 }
 
-/* Gallery section */
-.gallery h2 {
-    margin-bottom: 1rem;
-}
-
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1rem;
-}
-
-.image-grid img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Contact form */
-form {
+/* Social Footer */
+.social-footer {
     display: flex;
-    flex-direction: column;
-    max-width: 500px;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    background-color: #e9e9e9;
+    border-top: 1px solid #ccc;
+    flex-wrap: wrap;
 }
 
-form label {
-    margin-top: 1rem;
+.social-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
 }
 
-form input, form textarea {
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-top: 0.25rem;
+.social-tab:hover {
+    transform: scale(1.05);
 }
 
-button {
-    margin-top: 1rem;
-    padding: 0.75rem;
-    background-color: #2e3b4e;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 4px;
-}
-
-button:hover {
-    background-color: #445b77;
+.social-tab img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Footer */
@@ -98,5 +79,4 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
