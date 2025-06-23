@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Header */
 header {
     background: #2e3b4e;
     color: white;
@@ -23,11 +25,26 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Main content */
 main {
     padding: 2rem;
 }
 
-.gallery h2, .contact-info h2 {
+/* Description section */
+.description {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+    margin-bottom: 1rem;
+}
+
+/* Gallery section */
+.gallery h2 {
     margin-bottom: 1rem;
 }
 
@@ -43,6 +60,7 @@ main {
     border-radius: 8px;
 }
 
+/* Contact form */
 form {
     display: flex;
     flex-direction: column;
@@ -74,6 +92,7 @@ button:hover {
     background-color: #445b77;
 }
 
+/* Footer */
 footer {
     background: #2e3b4e;
     color: white;
