@@ -25,8 +25,8 @@
     </section>
 
     <section class="gallery-slider">
-      <div class="slider">
-        <div class="slide active"><img src="images/photo1.jpg" alt="Photo 1" /></div>
+      <div class="slider-wrapper" id="sliderWrapper">
+        <div class="slide"><img src="images/photo1.jpg" alt="Photo 1" /></div>
         <div class="slide"><img src="images/photo2.jpg" alt="Photo 2" /></div>
         <div class="slide"><img src="images/photo3.jpg" alt="Photo 3" /></div>
         <!-- Add more slides as needed -->
@@ -47,22 +47,18 @@
   </footer>
 
   <script>
-    const slides = document.querySelectorAll('.slide');
-    let current = 0;
+    const wrapper = document.getElementById("sliderWrapper");
+    const slides = document.querySelectorAll(".slide");
+    let currentIndex = 0;
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
-      });
+    function slideTo(index) {
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
     }
 
     setInterval(() => {
-      current = (current + 1) % slides.length;
-      showSlide(current);
-    }, 4000); // 4 seconds per slide
+      currentIndex = (currentIndex + 1) % slides.length;
+      slideTo(currentIndex);
+    }, 4000); // every 4 seconds
   </script>
 </body>
 </html>
