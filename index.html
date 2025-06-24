@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>New Generation Plastering LLC</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -19,14 +19,14 @@
     <section class="description">
       <h2>Quality Stucco, Stone, and Plastering Services</h2>
       <p>
-        At New Generation Plastering LLC, we bring years of experience and craftsmanship to every project.
-        We specialize in high-quality stucco, stonework, and plastering services for residential and commercial properties.
+        We bring years of experience to every project. Our team is committed to
+        beautiful and lasting plastering, stucco, and stonework.
       </p>
     </section>
 
     <section class="gallery-slider">
       <div class="slider">
-        <div class="slide" style="background-image: url('images/home1-before.jpg');">
+        <div class="slide active" style="background-image: url('images/home1-before.jpg');">
           <span class="label before-label">Before</span>
           <img src="images/home1-after.jpg" alt="After - Home 1" />
           <span class="label after-label">After</span>
@@ -51,14 +51,14 @@
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="mailto:rogcam777@hotmail.com">Email Us</a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
       </div>
       <p>&copy; 2025 New Generation Plastering LLC. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
-    let slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
     let current = 0;
 
     function showSlide(index) {
@@ -70,13 +70,10 @@
       });
     }
 
-    function nextSlide() {
+    setInterval(() => {
       current = (current + 1) % slides.length;
       showSlide(current);
-    }
-
-    showSlide(current);
-    setInterval(nextSlide, 4000); // Change every 4 seconds
+    }, 4000); // change every 4 seconds
   </script>
 </body>
 </html>
