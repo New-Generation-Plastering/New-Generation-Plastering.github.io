@@ -1,48 +1,98 @@
-/* General */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
+  background: #fdfdfd;
   color: #333;
 }
 
 header {
   background: #2e3b4e;
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
+  font-weight: 500;
 }
+
 nav a:hover {
   text-decoration: underline;
 }
 
-main {
+/* Hero section */
+.hero {
+  text-align: center;
   padding: 2rem;
+  background: linear-gradient(to right, #f0f0f0, #e6e6e6);
 }
 
-.description {
-  background-color: #fff;
-  padding: 2rem;
-  margin-bottom: 2rem;
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  background-color: #2e3b4e;
+  color: white;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Horizontal slider */
+.cta-button:hover {
+  background-color: #1f2a38;
+}
+
+/* Sections */
+.services, .about, .gallery-slider {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  background: #f4f4f4;
+  margin: 0.5rem 0;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+/* Image Slider */
+.gallery-slider h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .gallery-slider {
   overflow: hidden;
-  width: 100%;
   max-width: 100%;
   height: 400px;
-  margin: 2rem 0;
-  position: relative;
 }
 
 .slider-wrapper {
@@ -56,23 +106,22 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .slide img {
   max-width: 100%;
   max-height: 100%;
-  border-radius: 8px;
-  object-fit: contain;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 
 /* Footer */
 .lego-footer {
   background-color: #1a1a1a;
-  color: #fff;
+  color: #eee;
   padding: 2rem 1rem;
   text-align: center;
+  font-size: 0.95rem;
 }
 
 .footer-content {
@@ -85,14 +134,13 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .footer-links a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  transition: opacity 0.3s ease;
 }
 .footer-links a:hover {
   opacity: 0.7;
