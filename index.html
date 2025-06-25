@@ -12,42 +12,54 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=100063740212959" target="_blank">Facebook</a>
     </nav>
   </header>
 
   <main>
-    <section class="description">
-      <h2>Quality Stucco, Stone, and Plastering Services</h2>
+    <section class="hero">
+      <h2>Craftsmanship That Lasts</h2>
+      <p>Serving Colorado with top-tier stucco, stone, and plaster finishes for over a decade.</p>
+      <a href="contact.html" class="cta-button">Request a Free Quote</a>
+    </section>
+
+    <section class="services">
+      <h3>Our Services</h3>
+      <ul>
+        <li>✅ Stucco installation & repair</li>
+        <li>✅ Custom stonework</li>
+        <li>✅ Interior & exterior plastering</li>
+        <li>✅ Residential & commercial projects</li>
+      </ul>
+    </section>
+
+    <section class="about">
+      <h3>Why Choose Us?</h3>
       <p>
-        We bring years of experience to every project. Our team is committed to
-        beautiful and lasting plastering, stucco, and stonework.
+        At New Generation Plastering LLC, we believe in honesty, precision, and professionalism.
+        With over 10 years of experience, we treat every home like it's our own and ensure every finish is strong, clean, and built to last.
       </p>
     </section>
 
     <section class="gallery-slider">
+      <h3>Project Gallery</h3>
       <div class="slider-wrapper" id="sliderWrapper">
-        <div class="slide"><img src="House1.png" alt="Photo 1" /></div>
-        <div class="slide"><img src="House2.png" alt="Photo 2" /></div>
-        <div class="slide"><img src="House3.png" alt="Photo 3" /></div>
-        <div class="slide"><img src="House4.png" alt="Photo 4" /></div>
-        <div class="slide"><img src="House5.png" alt="Photo 5" /></div>
-        <div class="slide"><img src="House6.png" alt="Photo 6" /></div>
-        <div class="slide"><img src="House7.png" alt="Photo 7" /></div>
-        <div class="slide"><img src="House8.png" alt="Photo 8" /></div>
-        <!-- Add more slides as needed -->
+        <div class="slide"><img src="images/photo1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="images/photo2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="images/photo3.jpg" alt="Photo 3" /></div>
       </div>
     </section>
   </main>
 
   <footer class="lego-footer">
     <div class="footer-content">
+      <p><strong>📍 Based in Colorado</strong><br />📞 <a href="tel:3038178028">303-817-8028</a> | 📧 <a href="mailto:rogcam777@hotmail.com">rogcam777@hotmail.com</a></p>
       <div class="footer-links">
         <a href="index.html">Home</a>
         <a href="contact.html">Contact</a>
-        <a href="mailto:rogcam777@hotmail.com">Email Us</a>
         <a href="https://www.facebook.com/profile.php?id=100063740212959" target="_blank">Facebook</a>
       </div>
-      <p>&copy; 2025 New Generation Plastering LLC. All rights reserved.</p>
+      <p>&copy; 2025 New Generation Plastering LLC</p>
     </div>
   </footer>
 
@@ -63,7 +75,7 @@
     setInterval(() => {
       currentIndex = (currentIndex + 1) % slides.length;
       slideTo(currentIndex);
-    }, 4000); // every 4 seconds
+    }, 4000);
   </script>
 </body>
 </html>
